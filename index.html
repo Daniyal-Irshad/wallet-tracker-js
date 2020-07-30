@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wallet-Tracker</title>
+</head>
+<body>
+    <h1>Wallet-Tracker</h1>
+
+  <form class="signupForm">
+    <h1>Sign up Form</h1>
+    <label>Full Name</label>
+    <input type="text" class="fullName-Signup">
+    <label>Email</label>
+    <input type="text" class="email-Signup">
+    <label>Password</label>
+    <input type="text" class="password-Signup">
+    <button type="submit">Submit</button>
+  </form>
+
+  <form class="signinForm">
+    <h1>Sign in Form</h1>
+    <label>Email</label>
+    <input type="text" class="email-Signin">
+    <label>Password</label>
+    <input type="text" class="password-Signin">
+    <button type="submit">Submit</button>
+  </form>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC4imGEt93hcMWkTsJoG7yhTNM2itGfaOY",
+    authDomain: "wallet-tracker-js-a871b.firebaseapp.com",
+    databaseURL: "https://wallet-tracker-js-a871b.firebaseio.com",
+    projectId: "wallet-tracker-js-a871b",
+    storageBucket: "wallet-tracker-js-a871b.appspot.com",
+    messagingSenderId: "988140927853",
+    appId: "1:988140927853:web:4e2e3078a9629395a0f864"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <script src="index.js"></script>
+</body>
+</html>
